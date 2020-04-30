@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/main.css" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/ftq8jqj.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+<title>Portal Clothing Co</title>
+</nav>
+</head>
+
+<body>
+	<header>
+		<a href="index.html" class="logo"><img class="logoImg" src="assets/images/Portal_logov3.png" alt="Portal Logo"></a>		<input type="checkbox" id="nav-toggle" class="nav-toggle">
+		  <nav>
+			  <ul class="nav_links">
+				  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="about.html">About</a></li>
+				  <li><a href="faq.html">FAQ</a></li>
+				  <!-- SHOPPING CART -->
+                  <li>
+					<span class="open-slide">
+						<input type="image" class="cart" src="Assets/images/shoppingCart.png" onclick="openSlideMenu()"></a>
+					</span>
+				  </li>
+			  </ul>
+		  </nav>
+		  <!--SHOPPING CART CODE	-->
+		  <div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onClick="closeSlideMenu()" onClick="fadeInJS()">&times;</a>
+			<h3 class="sidebar_Cart"> MY CART <br></h3>
+			<div class="container">
+				<img src="Assets/images/Tshirt4.jpg" width="110px" height="75px" class="tshirt-Cart">
+				<p class="cart-item-number">x 1</p><p class="cart-description">LIGHT<br> <span class="cart-code">Product Code: #IC01</span></p><p class="cart-item">$25</p>
+
+				<img src="Assets/images/Tshirt1.jpg" width="110px" height="75px" class="tshirt-Cart">
+				<p class="cart-item-number">x 1</p><p class="cart-description">PEACE<br> <span class="cart-code">Product Code: #FS01</span></p><p class="cart-item">$25</p>
+				<div class="bottom-container">
+					<p class="total">Shipping & Taxes calculated at Checkout</p>
+					<button type="button" class="checkout">CHECKOUT – $50</button>
+				</div>
+			</div>
+		  </div>
+		  <label for="nav-toggle" class="nav-toggle-label">
+			  <span></span>
+		  </label>
+	</header>   
+
+	<main>
+		<h1 class="pageTitle" id="about">ABOUT</h1>
+		<div class="aboutCopy">
+			<h1 class="hSH">
+				HELPING STARTS HERE
+			</h1>
+			<h2 class="equation">Sounds, Colors, and Stories are the portal to Creativity.<br>
+
+				Creativity, Knowledge, and Talent are the portal to Unique Design.<br>
+				
+				Unique design, Guts, and Inspiration are the portal to Change.</h2>
+			<div class="howItAllBegan">
+				<div class="australianBushFires">
+					<img src="Assets/images/australianBushFires.jpg" alt="Hellish Light created by Australian Bush Fires">
+				</div>
+				<div class="copy">
+					<h2 class="subHead">HOW OUR STORY BEGINS</h2>
+					<p class="aboutBodyCopy">It started with sounds, colors, and stories; the inception of portal occurred during the Australian bushfires of 2019/2020.
+					Seeing the news reports and hearing the stories of the devastation experienced by the people and wildlife of Australia was the impetus to create a portal
+					to help others. 
+					</p>
+				</div>
+			</div>
+			<div class="ourMission"data-aos="fade-up">
+				<div class="copy2" data-aos="fade-up">
+				     <h2 class="creaturesFor">CREATED BY CREATURES<br> FOR CREATURES</h2>
+					 <p class="aboutBodyCopyV2" >Our mission is to create comfortable, unisex, and modern clothing featuring unique designs that are reflective of social issues 
+					 and challenges. A portion of the proceeds from sales of specific designs will be donated to charities supporting the assistance for those afflicted. Compassion saves lives.
+					 </p>
+				</div>
+				<div class="imgContainer" data-aos="fade-up">
+					<img src="Assets/images/helpinghandv2.jpg" alt="hands reaching out for one another" class="helpingHand" data-aos="fade-up">
+				</div>
+				<div class="divider" data-aos="fade-up"></div>
+				<div class="quote" data-aos="fade-up">
+					<h1 class="theodoreRoosevelt">"Do what you can, with what you have, where you are."</h1>
+					<p class="speaker">Theodore Roosevelt</p>
+				</div>
+			</div>
+		</div>
+		<aside class="sidebar">
+			<a href="https://www.instagram.com/portal.clothing/" target="_blank"><img src="Assets/images/insta.png" alt="Instagram Link" class="insta-icon"></a>
+		</aside>
+
+	</main>
+
+	<footer>
+        <div class="bottomShop">
+            <a href="shop.html">Shop</a>
+             <a class="bottomLink" href="about.html">About</a>
+             <a class="bottomLink" href="faq.html">FAQ</a>
+            <br>
+            <br>
+            <p class="legal">© 2020 Portal  |  Privacy Policy  |  Terms & Conditions</p>
+        </div>
+	</footer>
+	<script>
+		function openSlideMenu(){
+		  document.getElementById('side-menu').style.width = '500px';
+		}
+	
+		function closeSlideMenu(){
+		  document.getElementById('side-menu').style.width = '0';
+		}
+
+		function fadeInJS(){
+		  document.getElementById('sidebar_Cart').style.opacity = '0';
+		}
+	</script>
+
+    
+</body>
+</html>
+
+<script>
+	AOS.init({
+		duration: 1200,
+	});
+</script>

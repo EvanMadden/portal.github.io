@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../assets/main.css" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/ftq8jqj.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+<title>Portal Clothing Co</title>
+</nav>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/app.js" ></script>
+</head>
+<body>
+	<header>
+		<a href="../index.html" class="logo"><img class="logoImg" src="../assets/images/Portal_logov3.png" alt="Portal Logo"></a>		<input type="checkbox" id="nav-toggle" class="nav-toggle">
+		  <nav>
+			  <ul class="nav_links">
+				  <li><a href="../shop.html">Shop</a></li>
+          <li><a href="../about.html">About</a></li>
+				  <li><a href="../faq.html">FAQ</a></li>
+				  <!-- SHOPPING CART -->
+                  <li>
+					<span class="open-slide">
+						<input type="image" class="cart" src="../Assets/images/shoppingCart.png" onclick="openSlideMenu()"></a>
+					</span>
+				  </li>
+			  </ul>
+		  </nav>
+		  <!--SHOPPING CART CODE	-->
+		  <div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onClick="closeSlideMenu()" onClick="fadeInJS()">&times;</a>
+			<h3 class="sidebar_Cart"> MY CART <br></h3>
+			<div class="container">
+				<img src="../Assets/images/Tshirt4.jpg" width="110px" height="75px" class="tshirt-Cart">
+				<p class="cart-item-number">x 1</p><p class="cart-description">LIGHT<br> <span class="cart-code">Product Code: #IC01</span></p><p class="cart-item">$25</p>
+				<img src="../Assets/images/Tshirt1.jpg" width="110px" height="75px" class="tshirt-Cart">
+				<p class="cart-item-number">x 1</p><p class="cart-description">PEACE<br> <span class="cart-code">Product Code: #FS01</span></p><p class="cart-item">$25</p>
+				<div class="bottom-container">
+					<p class="total">Shipping & Taxes calculated at Checkout</p>
+					<button type="button" class="checkout">CHECKOUT – $50</button>
+				</div>
+			</div>
+		  </div>
+		  <label for="nav-toggle" class="nav-toggle-label">
+			  <span></span>
+		  </label>
+	</header>   
+
+	<main>
+        <a href="../introspectiveLine.html"><h1 class="pageTitleShirts" id="introspectiveTitle">INTROSPECTIVE</h1></a>
+          <div class="SHIRT">
+            <div class="letThisBeIt">
+              <div id="slider">
+               <a href="#" class="PrevBtn">&#8249;</a>
+               <a href="#" class="NextBtn">&#8250;</a>
+                  <ul>
+                  <li id="pls"><img src="../Assets/images/tshirtFront_light3.jpg" alt="Light"></li>
+                  <li id="pls"><img src="../Assets/images/tshirtFront_light2.jpg" alt="Light"></li>
+                  <li id="pls"><img src="../Assets/images/tshirtFront_light.jpg" alt="Light"></li>
+                </ul>
+              </div>
+            </div>
+              <div class="description">
+                  <h1 class="shirtTitlePage">LIGHT </h2>
+                  <h3 class="priceShirt">$25</h3>
+                  <h2 class="details">DETAILS:</h2>
+                  <p class="pp">
+                      <ul>
+                          <li>100% Cotton</li>
+                          <li>Lightweight</li>
+                          <li>Crew Neck</li>
+                          <li>Short Sleeves</li>
+                          <li>Machine Washable</li>
+                          <li><strong>10% of proceeds will be <br>donated to Active Minds</strong></li>
+                      </ul>
+
+                      There is always light at the end of the tunnel. No matter how dark it gets, keep moving forward.
+                  </p>
+                  <div class="buttons">
+                    <button type="button" class="buttonShop">S</button>
+                    <button type="button" class="buttonShop">M</button>
+                    <button type="button" class="buttonShop">L</button>
+                    <button type="button" class="buttonShop">XL</button>
+                    <button type="button" class="buttonShop">XXL</button>
+                 </div>
+                 <div class="addToCart">
+                    <button type="button" class="addToCart">ADD TO CART</button>
+                  </div>
+              </div>
+          </div>
+
+        <div class="spacing">
+        </div>
+
+        <aside class="sidebar">
+			<a href="https://www.instagram.com/portal.clothing/" target="_blank"><img src="../Assets/images/insta.png" alt="Instagram Link" class="insta-icon"></a>
+		</aside>
+
+
+    </main>
+
+    <footer>
+        <div class="bottomShop">
+			<a href="../shop.html">Shop</a>
+			<a class="bottomLink" href="../about.html">About</a>
+			<a class="bottomLink" href="../faq.html">FAQ</a>
+		    <br>
+		    <br>
+		    <p class="legal">© 2020 Portal  |  Privacy Policy  |  Terms & Conditions</p>
+		</div>
+    </footer>
+    <script>
+        function openSlideMenu(){
+          document.getElementById('side-menu').style.width = '500px';
+        }
+    
+        function closeSlideMenu(){
+          document.getElementById('side-menu').style.width = '0';
+        }
+
+        function fadeInJS(){
+          document.getElementById('sidebar_Cart').style.opacity = '0';
+        }
+    </script>
+    
+</body>
+</html>
+
+<script>
+	AOS.init({
+		duration: 1200,
+	});
+</script>
