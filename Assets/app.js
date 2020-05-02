@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
     
       var slideCount = $('#slider ul li').length;
       var slideWidth = '1000px';
-      var slideHeight = '700px';
+      var slideHeight = '650px';
       var sliderUlWidth = slideCount * slideWidth;
       
       $('#slider').css({ width: slideWidth, height: slideHeight });
@@ -31,7 +31,7 @@ jQuery(document).ready(function ($) {
               left: - slideWidth
           }, 200, function () {
               $('#slider ul li:first-child').appendTo('#slider ul');
-              $('#slider ul').css('left', '');
+              $('#slider ul').css('right', '');
           });
       };
   

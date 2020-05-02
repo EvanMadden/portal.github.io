@@ -5,7 +5,9 @@
 }
 
 html {
+
   line-height: 1.15;
+  font-size: 18px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
@@ -162,7 +164,7 @@ nav {
   transform-origin: top;
   transition: transform 400ms ease-in-out;
   -moz-transition: transform 400ms ease-in-out;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 nav ul {
@@ -174,7 +176,8 @@ nav ul {
 nav li {
   margin-bottom: 2em;
   margin-left: 1em;
-  font-size: 2em;
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
 nav a {
@@ -223,6 +226,7 @@ nav a {
     text-decoration: none;
     grid-column: 2 / 3;
     justify-content: start;
+    cursor: pointer;
   }
 
   .content {
@@ -304,15 +308,16 @@ nav a {
   }
 
   .weAre p {
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1.5em;
   font-family: avenir, sans-serif;
   margin-bottom: 5vw;
   }
 
   .conversation {
+  font-family: omnes-pro, sans-serif;
+  font-weight: 700;
   line-height: 1em;
-  font-weight: 600;
   font-size: 2em;
   letter-spacing: 2px;
   }
@@ -340,7 +345,8 @@ nav a {
     top: initial;
     left: initial;
     /* end Edge support stuff */
-    
+    font-family: omnes-pro, sans-serif;
+    font-weight: 500;
     grid-column: 5 / 9;
     display: flex;
     justify-content: flex-end;
@@ -472,7 +478,7 @@ nav a {
 
   .sidebar {
   width: 15%;
-  height: 2vh;
+  height: 1vh;
   left: .5vw;
   bottom: 100px;
   padding: 1em; 
@@ -503,27 +509,29 @@ nav a {
   margin: 0 auto;
   width: 75vw;
   height: 40vw;
-  margin-bottom: 3vh;
+  margin-bottom: 50px;
   overflow: hidden;
   }
 
   .action {
   grid-column: 1 / 8;
-  height: 40vw;
+  height: 700px;
   }
 
   .cTA {
   grid-column: 7/10;
   z-index: 999;
   position: absolute;
+  margin-right: 100px;
   }
 
   .collection {
   grid-row: 1 / 2;
   font-family: omnes-pro, sans-serif;
+  font-weight: 700;
   font-size: 4em;
   margin-bottom: 0;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1em;
   }
 
@@ -546,6 +554,7 @@ nav a {
   text-align: center;
   font-size: 1em;
   border: black;
+  
   }
 
 
@@ -602,7 +611,6 @@ nav a {
   padding-top: 2vh;
   padding-bottom: 2vh;
   width: 40vw;
-  height: 45vh;
   line-height: 5em;
   text-align: center;
   place-items: center;
@@ -644,9 +652,10 @@ nav a {
   }
 
   #submit {
-  border-radius: 5px;
   font-weight: 600;
-  border: solid black 1px;
+  border: 0;
+  background-color: black;
+  color: white;
   }
 
   form {
@@ -660,14 +669,15 @@ nav a {
   .bottomFront{
   background-color: black;
   color: white;
-  height: 18vh;
+  height: 200px;
   width: 100%;
   display: block;
   align-content: center;
   text-align: center;
-  padding-top: 8vh;
+  padding-top: 20px;
   align-content: center;
   letter-spacing: 2px;
+  bottom: 0;
   }
 
   .bottomFront a {
@@ -681,6 +691,7 @@ nav a {
   color: rgba(100,100,100);
   letter-spacing: 2px;
   align-content: center;
+  text-align: center;
   }
 
 
@@ -711,6 +722,7 @@ SHOP
   overflow: hidden;
   height: auto;
   opacity: 0;
+  z-index: 995;
   animation: fadeUp 1s forwards .2s;
   -moz-animation: fadeUp 1s forwards .2s;
   }
@@ -749,6 +761,22 @@ SHOP
   grid-column: 1 / 4;
   height: auto;
   width: 100%;
+  }
+
+  .flowState::before {
+    content: '';
+    border-top: 1px solid rgba(0,0,0, .3);
+    z-index: 999;
+    display: block;
+    position: relative;
+  }
+
+  .flowState::after {
+    content: '';
+    bottom: 0;
+    position: absolute;
+    border-top: 1px solid rgba(0,0,0, .3);
+    width: 100%;
   }
 
 
@@ -804,6 +832,7 @@ SHOP
   grid-column: 7 / 10;
   overflow: hidden;
   opacity: 0;
+  z-index: 997;
   animation: fadeUp 1s forwards .6s;
   -moz-animation: fadeUp 1s forwards .6s;
   }
@@ -839,6 +868,22 @@ SHOP
   grid-column: 7 / 10;
   height: auto;
   width: 100%;
+  }
+
+  .endangered::before {
+    content: '';
+    border-top: 1px solid rgba(0,0,0, .3);
+    z-index: 999;
+    display: block;
+    position: relative;
+  }
+
+  .endangered::after {
+    content: '';
+    bottom: 0;
+    position: absolute;
+    border-top: 1px solid rgba(0,0,0, .3);
+    width: 100%;
   }
 
   /* break */
@@ -879,6 +924,7 @@ SHOP
 
   .overlay:hover{
   opacity: 100%;
+  transition: 1s ease-in-out;
   }
 
   .overlay {
@@ -907,12 +953,12 @@ SHOP
   .bottom{
   background-color: black;
   color: white;
-  height: 18vh;
+  height: 250px;
   width: 100%;
   display: block;
   align-content: center;
   text-align: center;
-  padding-top: 8vh;
+  padding-top: 40px;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -929,6 +975,14 @@ SHOP
   margin-left: 3vw;
   color: white;
   text-decoration: none;
+  font-size: 1.25em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  }
+
+  .bottomLink:first-child {
+    margin-left: 0;
   }
 
   .bottomEntryShop{
@@ -939,7 +993,7 @@ SHOP
   display: block;
   align-content: center;
   text-align: center;
-  padding-top: 8vh;
+  padding-top: 60px;
   bottom: 0;
   width: 100%;
   letter-spacing: 2px;
@@ -949,7 +1003,7 @@ SHOP
   color: white;
   text-decoration: none;
   letter-spacing: 2px;
-  
+  font-size: 1.25em;
   }
 
   /* ANIMATION SHOP */
@@ -965,6 +1019,30 @@ SHOP
     transform: translateY(0px);
   }
   }
+
+  @keyframes fadeLeft {
+    0% {
+      opacity: 0%;
+      transform: translateX(150px);
+    }
+  
+    100% {
+      opacity: 100%;
+      transform: translateX(0px);
+    }
+    }
+
+    @keyframes fadeRight {
+      0% {
+        opacity: 0%;
+        transform: translateX(-150px);
+      }
+    
+      100% {
+        opacity: 100%;
+        transform: translateX(0px);
+      }
+      }
 
   @keyframes carousel {
   0% {
@@ -999,10 +1077,10 @@ SHOP
   grid-column: 1 / 10;
   font-family: avenir, sans-serif;
   font-weight: 400;
-  font-size: 4em;
+  font-size: 2em;
   line-height: 1.5em;
   color: black;
-  padding: 70px;
+  padding: 40px 20px 20px 20px;
   animation: down 1s forwards .1s;
   -moz-animation: down 1s forwards .1s;
   opacity: 0%;
@@ -1017,11 +1095,11 @@ SHOP
   background-color:black;
   color: white;
   font-family: eckmannpsych, sans-serif;
-  font-size: 7em;
+  font-size: 5em;
   position: relative;
   display: flex;
-  padding-top: 150px;
-  padding-bottom: 10px;
+  padding-top: 140px;
+  padding-bottom: 5px;
   justify-content: center;
   animation: down 1s forwards;
   -moz-animation: down 1s forwards;
@@ -1035,7 +1113,7 @@ SHOP
     background-color:black;
     color: white;
     font-family: eckmannpsych, sans-serif;
-    font-size: 7em;
+    font-size: 5em;
     position: relative;
     display: flex;
     padding-top: 150px;
@@ -1044,6 +1122,12 @@ SHOP
     letter-spacing: 4px;
     margin-top: 0;
     margin-bottom: 0;
+    transition: 1s ease-in-out;
+  }
+
+  .pageTitleShirts:hover {
+    background-color: rgba(0,0,0, .8);
+    transition: 1s ease-in-out;
   }
 
   .PrevBtn {
@@ -1054,9 +1138,13 @@ SHOP
     background-color: black;
     font-size: 2em;
     text-decoration: none;
+    text-align: center;
     color: white;
-    padding: 10px 12px;
+    padding: 10px 15px;
     justify-content: center;
+    animation: fadeRight 1s forwards;
+    -moz-animation: fadeRight 1s forwards;
+    opacity: 0;
   }
 
   .NextBtn {
@@ -1067,23 +1155,24 @@ SHOP
     background-color: black;
     font-size: 2em;
     text-decoration: none;
+    text-align: center;
     color: white;
-    padding: 10px 12px;
+    padding: 10px 15px;
     justify-content: center;
+    animation: fadeLeft 1s forwards;
+    -moz-animation: fadeLeft 1s forwards;
+    opacity: 0;
   }
   
   #pls img {
     width: 950px;
   }
 
-
   .slider {
     display: grid;
     grid-column: 2 / 9;
     position: relative;
     opacity: 0;
-    animation: fadeUp 1s forwards;
-    -moz-animation: fadeUp 1s forwards;
     object-fit: cover;
     transition: transform 250ms ease-in;
     overflow: hidden;
@@ -1100,6 +1189,8 @@ SHOP
       float: left;
       margin: 0;
       padding: 0;
+      animation: fadeUp 1s forwards;
+      -moz-animation: fadeUp 1s forwards;
     }
 
     #slider {
@@ -1111,7 +1202,11 @@ SHOP
     }
 
     .letThisBeIt {
-      margin-left: 10vh;
+      margin-left: 25px;
+    }
+
+    .descriptionBodyCopy {
+      letter-spacing: 0;
     }
 
   .slider button {
@@ -1128,6 +1223,18 @@ SHOP
 
   #donate {
     font-family: avenir, sans-serif;
+  }
+
+  #one:hover,
+  #two:hover,
+  #three:hover,
+  #four:hover,
+  #five:hover,
+  #six:hover,
+  #seven:hover,
+  #eight:hover,
+  #nine:hover {
+    border: 2px solid rgba(0,0,0, .3);
   }
 
 
@@ -1242,7 +1349,7 @@ INTROSPECTIVE
   display: block;
   align-content: center;
   text-align: center;
-  padding-top: 8vh;
+  padding-top: 60px;
   }
 
   .bottomShop a:first-child {
@@ -1252,11 +1359,18 @@ INTROSPECTIVE
   }
 
   .shirtTitle {
-  font-weight: 600;
-  font-size: 3em;
-  margin: 0 2vh;
-
+  font-size: 2em;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-weight: 200;
+  text-align: center;
   }
+
+  .shirtTitle strong {
+    margin-right: 50px;
+    font-weight: 600;
+  }
+
 
   /*
 //////////////////////////////////////
@@ -1271,10 +1385,10 @@ FLOW STATE
   width: auto;
   height: auto;
   overflow: hidden;
-  text-align: center;
   animation: fadeUp 1s forwards .2s;
   -moz-animation: fadeUp 1s forwards .2s;
   opacity: 0%;
+  justify-content: end;
   }
 
   #four {
@@ -1288,10 +1402,10 @@ FLOW STATE
   width: auto;
   height: auto;
   overflow: hidden;
-  text-align: center;
   animation: fadeUp 1s forwards .4s;
   -moz-animation: fadeUp 1s forwards .4s;
   opacity: 0%;
+  justify-content: end;
   }
 
   #five {
@@ -1305,10 +1419,10 @@ FLOW STATE
   width: auto;
   height: auto;
   overflow: hidden;
-  text-align: center;
   animation: fadeUp 1s forwards .6s;
   -moz-animation: fadeUp 1s forwards .6s;
   opacity: 0%;
+  justify-content: end;
   }
 
   #six {
@@ -1416,6 +1530,7 @@ ABOUT
   .hSH {
   grid-column: 1 / 10;
   font-family: omnes-pro, sans-serif;
+  font-weight: 600;
   font-size: 5em;
   display: grid;
   text-align: center;
@@ -1443,7 +1558,7 @@ ABOUT
   .equation::before,
   .equation::after {
   content: '';
-  border-top: 1px solid black;
+  border-top: 1px solid rgba(0,0,0, .3);
   }
 
   .equation::before {
@@ -1455,8 +1570,7 @@ ABOUT
   }
 
   .howItAllBegan {
-  grid-column: 1 / 10;
-  display: grid;
+  grid-column: 1 / 5;
   overflow: hidden;
   grid-gap: inherit;
   margin-top: 0;
@@ -1464,31 +1578,34 @@ ABOUT
   }
 
   .australianBushFires {
-  grid-column: 1 / 6;
-  width: 750px;
-  overflow: hidden;
-  object-fit: cover;
-  margin-top: 10px;
-  opacity: 0;
-  animation: fadeUp 1s forwards .4s;
-  -moz-animation: fadeUp 1s forwards .4s;
+    grid-column: 1 / 5;
+    width: 650px;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: 10px; 
+    opacity: 0;
+    animation: fadeUp 1s forwards .4s;
+    -moz-animation: fadeUp 1s forwards .4s;
   }
 
   .copy {
-  margin-left: 1vw;
-  display: grid;
-  position: relative;
-  grid-column: 6/ 10;
+    grid-column: 1 / 5;
+    display: grid;
+    position: relative;
+    width: 600px;
+    margin-top: 0;
   }
 
   .subHead {
   text-align: left;
   color: black;
   z-index: 997;
-  font-weight: 600;
+  font-weight: 700;
   position: relative;
   display: grid;
-  margin-bottom: 3vh;
+  margin-bottom: 10px;
+  margin-top: 10px;
   font-size: 2em;
   letter-spacing: 2px;
   line-height: 1.25em;
@@ -1512,32 +1629,33 @@ ABOUT
   }
 
   .ourMission {
+    position: relative;
     grid-gap: inherit;
-    grid-column: 1 / 10;
+    grid-column: 6 / 10;
   }
 
   .copy2 {
-    display: grid;
-    grid-column: 1 / 6;
-    text-align: right;
+    text-align: left;
+    position: relative;
   }
 
   .creaturesFor {
   display: grid;
-  grid-column: 1 / 6;
-  text-align: right;
+  grid-column: 6 / 10;
+  text-align: left;
   color: black;
   z-index: 997;
-  font-weight: 600;
+  font-weight: 700;
   position: relative;
-  display: grid;
-  margin-bottom: 3vh;
+  margin-bottom: 10px;
   font-size: 2em;
   letter-spacing: 2px;
   line-height: 1.25em;
   opacity: 0;
   animation: fadeUp 1s forwards .4s;
   -moz-animation: fadeUp 1s forwards .4s;
+  margin-top: 0;
+  padding-top: 10px;
   }
 
   .aboutBodyCopyV2 {
@@ -1548,47 +1666,59 @@ ABOUT
   -moz-animation: fadeUp 1s forwards .4s;
   margin-bottom: 5vh;
   z-index: 997;
-  position: relative;
+  position: absolute;
   letter-spacing: 2px;
   line-height: 1.5em;
   }
   
   .helpingHand {
-    width: 100%;
+    width: 650px;
+    height: 400px;
     justify-content: center;
-    height: auto;
+    position: absolute;
   }
 
   .imgContainer {
     grid-column: 6 / 10;
+    height: 400px;
+    margin-top: 10px;
     position: relative;
-    height: 1000px;
     overflow: hidden;
     animation: fadeUp 1s forwards .4s;
     -moz-animation: fadeUp 1s forwards .4s;
   }
   
   .quote {
-    grid-column: 2 / 9;
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 5vh;
+    grid-column: 1 / 5;
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 25px;
   }
 
   .divider {
-    border: 1px solid black;
+    border: 1px solid rgba(0,0,0, .3);
     width: 100%;
     position: relative;
     grid-column: 1 / 10;
-    margin-top: 3vh;
+    margin-top: 25px;
+  }
+
+  .quote2 {
+    grid-column: 2 / 9;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
   }
 
   .theodoreRoosevelt {
     font-weight: 600;
+    margin-top: 25px;
+    font-family: omnes-pro, sans-serif;
   }
 
   .speaker {
-    font-weight: 400;
+    font-weight: 200;
+    font-family: avenir, sans-serif;
   }
   
 
@@ -1623,7 +1753,6 @@ FAQ
   padding-left: 70px;
   padding-right: 70px;
   position: relative;
-  letter-spacing: 2px;
   }
 
   .first,
@@ -1638,9 +1767,10 @@ FAQ
   }
 
   .fAQ p {
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-bottom: 0;
-  letter-spacing: 2px;
+  font-family: avenir, sans-serif;
+  font-weight: 300;
   }
 
   .first {
@@ -1651,7 +1781,7 @@ FAQ
 
   .first p::after {
   content: '';
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0,0,0, .3);
   display: flex;
   padding-top: 50px;
   }
@@ -1664,7 +1794,7 @@ FAQ
 
   .second p::after {
   content: '';
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0,0,0, .3);
   display: flex;
   padding-top: 50px;
   }
@@ -1677,7 +1807,7 @@ FAQ
 
   .third p::after {
   content: '';
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0,0,0, .3);
   display: flex;
   padding-top: 50px;
   }
@@ -1690,7 +1820,7 @@ FAQ
 
   .fourth p::after {
   content: '';
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0,0,0, .3);
   display: flex;
   padding-top: 50px;
   }
@@ -1703,7 +1833,7 @@ FAQ
 
   .fifth p::after {
   content: '';
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0,0,0, .3);
   display: flex;
   padding-top: 50px;
   }
@@ -1716,7 +1846,7 @@ FAQ
 
   .sixth p::after {
   content: '';
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0,0,0, .3);
   display: flex;
   padding-top: 50px;
   }
@@ -1760,7 +1890,6 @@ FAQ
   padding-left: 70px;
   padding-right: 70px;
   position: relative;
-  letter-spacing: 2px;
   
   }
 
@@ -1793,6 +1922,7 @@ FAQ
   font-size: 3em;
   margin: 0;
   line-height: .75em;
+  letter-spacing: 3px;
   grid-column: 1 / 3;
   position: relative;
   display: grid;
@@ -1834,7 +1964,7 @@ FAQ
   }
 
   .addToCart {
-    width: 20vh ;
+    width: 173px ;
     position: relative;
   }
 
@@ -1866,6 +1996,10 @@ FAQ
     line-height: 1.5em;
     animation: slide 1s forwards .2s;
     -moz-animation: slide 1s forwards .2s;
+  }
+
+  .description ul {
+    padding-left: 18px;
   }
   
 
@@ -2014,7 +2148,7 @@ FAQ
 
 .sidebar_Cart {
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .sidebar_Cart::after {
@@ -2071,7 +2205,8 @@ grid-column: 1;
   grid-column: 1 / 10;
   display: grid;
   position: relative;
-  margin-top: 52vh;
+  margin-top: 45vh;
+  bottom: 0px;
   opacity: 1;
 }      
 
@@ -2082,6 +2217,8 @@ grid-column: 1;
   text-align: center;
   font-size: 1em;
   letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
 }
 
 .bottom-container::before {
@@ -2159,10 +2296,6 @@ grid-column: 1;
 
 .carousel__button--right {
   right: -40px;
-}
-
-.carousel__button img {
-
 }
 
 .carousel__nav {
