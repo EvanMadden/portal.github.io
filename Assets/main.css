@@ -255,6 +255,7 @@ nav a {
   opacity: 0%;
   animation: fadeIn 1s forwards;
   -moz-animation: fadeIn 1s forwards;
+  -webkit-animation: fadeIn 1s forwards;
   }
 
   @keyframes fadeIn{
@@ -402,6 +403,7 @@ nav a {
   /* animation*/
   animation: slide .75s forwards .5s;
   -moz-animation: slide .75s forwards .5s;
+  -webkit-animation: slide .75s forwards .5s;
   transform-origin: right bottom;
   }
 
@@ -419,6 +421,7 @@ nav a {
   /* animation*/
   animation: slide .75s forwards .5s;
   -moz-animation: slide .75s forwards .5s;
+  -webkit-animation: slide .75s forwards .5s;
   transform-origin: right bottom;
   }
 
@@ -435,6 +438,7 @@ nav a {
   place-items: left;
   animation: slide .75s forwards .7s;
   -moz-animation: slide .75s forwards .7s;
+  -webkit-animation: slide .75s forwards .7s;
   padding-top: 150px;
   opacity: 0;
   }
@@ -725,6 +729,7 @@ SHOP
   z-index: 995;
   animation: fadeUp 1s forwards .2s;
   -moz-animation: fadeUp 1s forwards .2s;
+  -webkit-animation: fadeUp 1s forwards .2s;
   }
 
   .flowState1 {
@@ -733,6 +738,7 @@ SHOP
   opacity: 0;
   animation: carousel 9s infinite ;
   -moz-animation: carousel 9s infinite ;
+  -webkit-animation: carousel 9s infinite ;
   position: absolute;
   padding-bottom: 10vh;
   }
@@ -743,6 +749,7 @@ SHOP
   opacity: 0;
   animation: carousel 9s infinite 3s;
   -moz-animation: carousel 9s infinite 3s;
+  -webkit-animation: carousel 9s infinite 3s;
   position: absolute;
   place-content: center;
   }
@@ -753,6 +760,7 @@ SHOP
   opacity: 0;
   animation: carousel 9s infinite 6s;
   -moz-animation: carousel 9s infinite 6s;
+  -webkit-animation: carousel 9s infinite 6s;
   position: absolute;
   
   }
@@ -787,6 +795,7 @@ SHOP
   opacity: 0;
   animation: fadeUp 1s forwards .4s;
   -moz-animation: fadeUp 1s forwards .4s;
+  -webkit-animation: fadeUp 1s forwards .4s;
   width: 100%;
   height: auto;
   align-items: center;
@@ -800,6 +809,7 @@ SHOP
   opacity: 0;
   animation: carousel 9s infinite;
   -moz-animation: carousel 9s infinite;
+  -webkit-animation: carousel 9s infinite;
   position: absolute;
   }
 
@@ -809,6 +819,7 @@ SHOP
   opacity: 0;
   animation: carousel 9s infinite 2.5s;
   -moz-animation: carousel 9s infinite 2.5s;
+  -webkit-animation: carousel 9s infinite 2.5s;
   position: absolute;
   
   }
@@ -819,6 +830,7 @@ SHOP
   opacity: 0;
   animation: carousel 9s infinite 5.5s;
   -moz-animation: carousel 9s infinite 5.5s;
+  -webkit-animation: carousel 9s infinite 5.5s;
   position: absolute;
   }
 
@@ -835,6 +847,7 @@ SHOP
   z-index: 997;
   animation: fadeUp 1s forwards .6s;
   -moz-animation: fadeUp 1s forwards .6s;
+  -webkit-animation: fadeUp 1s forwards .6s;
   }
 
   .endangered1 {
@@ -843,6 +856,7 @@ SHOP
   opacity: 0;
   animation: carousel 9s infinite;
   -moz-animation: carousel 9s infinite;
+  -webkit-animation: carousel 9s infinite;
   position: absolute;
   }
 
@@ -852,6 +866,7 @@ SHOP
   opacity: 0;
   animation: carousel 9s infinite 3s;
   -moz-animation: carousel 9s infinite 3s;
+  -webkit-animation: carousel 9s infinite 3s;
   position: absolute;
   }
 
@@ -861,6 +876,7 @@ SHOP
   opacity: 0;
   animation: carousel 9s infinite 6s;
   -moz-animation: carousel 9s infinite 6s;
+  -webkit-animation: carousel 9s infinite 6s;
   position: absolute;
   }
 
@@ -1083,6 +1099,7 @@ SHOP
   padding: 40px 20px 20px 20px;
   animation: down 1s forwards .1s;
   -moz-animation: down 1s forwards .1s;
+  -webkit-animation: down 1s forwards .1s;
   opacity: 0%;
   margin-top: 0;
   z-index: 998;
@@ -1103,6 +1120,7 @@ SHOP
   justify-content: center;
   animation: down 1s forwards;
   -moz-animation: down 1s forwards;
+  -webkit-animation: down 1s forwards;
   opacity: 0%;
   letter-spacing: 4px;
   margin-top: 0;
@@ -1144,6 +1162,7 @@ SHOP
     justify-content: center;
     animation: fadeRight 1s forwards;
     -moz-animation: fadeRight 1s forwards;
+    -webkit-animation: fadeRight 1s forwards;;
     opacity: 0;
   }
 
@@ -1161,6 +1180,7 @@ SHOP
     justify-content: center;
     animation: fadeLeft 1s forwards;
     -moz-animation: fadeLeft 1s forwards;
+    -webkit-animation: fadeLeft 1s forwards;
     opacity: 0;
   }
   
@@ -1191,6 +1211,7 @@ SHOP
       padding: 0;
       animation: fadeUp 1s forwards;
       -moz-animation: fadeUp 1s forwards;
+      -webkit-animation: fadeUp 1s forwards;
     }
 
     #slider {
@@ -1280,6 +1301,7 @@ INTROSPECTIVE
   text-align: center;
   animation: fadeUp 1s forwards .2s;
   -moz-animation: fadeUp 1s forwards .2s;
+  -webkit-animation: fadeUp 1s forwards .2s;
   opacity: 0%;
   }
 
@@ -1297,6 +1319,7 @@ INTROSPECTIVE
   text-align: center;
   animation: fadeUp 1s forwards .4s;
   -moz-animation: fadeUp 1s forwards .4s;
+  -webkit-animation: fadeUp 1s forwards .4s;
   opacity: 0%;
   }
 
@@ -1314,6 +1337,7 @@ INTROSPECTIVE
   text-align: center;
   animation: fadeUp 1s forwards .6s;
   -moz-animation: fadeUp 1s forwards .6s;
+  -webkit-animation: fadeUp 1s forwards .6s;
   opacity: 0%;
   }
 
@@ -1387,6 +1411,7 @@ FLOW STATE
   overflow: hidden;
   animation: fadeUp 1s forwards .2s;
   -moz-animation: fadeUp 1s forwards .2s;
+  -webkit-animation: fadeUp 1s forwards .2s;
   opacity: 0%;
   justify-content: end;
   }
@@ -1404,6 +1429,7 @@ FLOW STATE
   overflow: hidden;
   animation: fadeUp 1s forwards .4s;
   -moz-animation: fadeUp 1s forwards .4s;
+  -webkit-animation: fadeUp 1s forwards .4s;
   opacity: 0%;
   justify-content: end;
   }
@@ -1421,6 +1447,7 @@ FLOW STATE
   overflow: hidden;
   animation: fadeUp 1s forwards .6s;
   -moz-animation: fadeUp 1s forwards .6s;
+  -webkit-animation: fadeUp 1s forwards .6s;
   opacity: 0%;
   justify-content: end;
   }
@@ -1447,6 +1474,7 @@ ENDANGERED
   text-align: center;
   animation: fadeUp 1s forwards .2s;
   -moz-animation: fadeUp 1s forwards .2s;
+  -webkit-animation: fadeUp 1s forwards .2s;
   opacity: 0%;
   }
 
@@ -1464,6 +1492,7 @@ ENDANGERED
   text-align: center;
   animation: fadeUp 1s forwards .4s;
   -moz-animation: fadeUp 1s forwards .4s;
+  -webkit-animation: fadeUp 1s forwards .4s;
   opacity: 0%;
   }
 
@@ -1481,6 +1510,7 @@ ENDANGERED
   text-align: center;
   animation: fadeUp 1s forwards .6s;
   -moz-animation: fadeUp 1s forwards .6s;
+  -webkit-animation: fadeUp 1s forwards .6s;
   opacity: 0%;
   }
 
@@ -1540,12 +1570,13 @@ ABOUT
   letter-spacing: 2px;
   animation: fadeUp 1s forwards;
   -moz-animation: fadeUp 1s forwards;
+  -webkit-animation: fadeUp 1s forwards;
   }
 
   .equation {
   grid-column: 1 / 10;
   line-height: 1.5em;
-  font-size: 2.25em;
+  font-size: 2em;
   display: grid;
   font-weight: 500;
   text-align: center;
@@ -1553,6 +1584,7 @@ ABOUT
   letter-spacing: 2px;
   animation: fadeUp 1s forwards .2s;
   -moz-animation: fadeUp 1s forwards .2s;
+  -webkit-animation: fadeUp 1s forwards .2s;
   }
 
   .equation::before,
@@ -1579,7 +1611,7 @@ ABOUT
 
   .australianBushFires {
     grid-column: 1 / 5;
-    width: 650px;
+    
     height: 400px;
     overflow: hidden;
     object-fit: cover;
@@ -1587,6 +1619,7 @@ ABOUT
     opacity: 0;
     animation: fadeUp 1s forwards .4s;
     -moz-animation: fadeUp 1s forwards .4s;
+    -webkit-animation: fadeUp 1s forwards .4s;
   }
 
   .copy {
@@ -1612,6 +1645,7 @@ ABOUT
   opacity: 0;
   animation: fadeUp 1s forwards .4s;
   -moz-animation: fadeUp 1s forwards .4s;
+  -webkit-animation: fadeUp 1s forwards .4s;
   }
 
   .aboutBodyCopy {
@@ -1621,6 +1655,7 @@ ABOUT
   opacity: 0;
   animation: fadeUp 1s forwards .4s;
   -moz-animation: fadeUp 1s forwards .4s;
+  -webkit-animation: fadeUp 1s forwards .4s;
   margin-bottom: 5vh;
   z-index: 997;
   position: relative;
@@ -1654,6 +1689,7 @@ ABOUT
   opacity: 0;
   animation: fadeUp 1s forwards .4s;
   -moz-animation: fadeUp 1s forwards .4s;
+  -webkit-animation: fadeUp 1s forwards .4s;
   margin-top: 0;
   padding-top: 10px;
   }
@@ -1664,6 +1700,7 @@ ABOUT
   opacity: 0;
   animation: fadeUp 1s forwards .4s;
   -moz-animation: fadeUp 1s forwards .4s;
+  -webkit-animation: fadeUp 1s forwards .4s;
   margin-bottom: 5vh;
   z-index: 997;
   position: absolute;
@@ -1686,6 +1723,7 @@ ABOUT
     overflow: hidden;
     animation: fadeUp 1s forwards .4s;
     -moz-animation: fadeUp 1s forwards .4s;
+    -webkit-animation: fadeUp 1s forwards .4s;
   }
   
   .quote {
@@ -1700,7 +1738,7 @@ ABOUT
     width: 100%;
     position: relative;
     grid-column: 1 / 10;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .quote2 {
@@ -1776,6 +1814,7 @@ FAQ
   .first {
   animation: fadeSlide 1s forwards .2s;
   -moz-animation: fadeSlide 1s forwards .2s;
+  -webkit-animation: fadeSlide 1s forwards .2s;
   opacity: 0;
   }
 
@@ -1789,6 +1828,7 @@ FAQ
   .second {
   animation: fadeSlide 1s forwards .4s;
   -moz-animation: fadeSlide 1s forwards .4s;
+  -webkit-animation: fadeSlide 1s forwards .4s;
   opacity: 0;
   }
 
@@ -1802,6 +1842,7 @@ FAQ
   .third {
   animation: fadeSlide 1s forwards .6s;
   -moz-animation: fadeSlide 1s forwards .6s;
+  -webkit-animation: fadeSlide 1s forwards .6s;
   opacity: 0;
   }
 
@@ -1815,6 +1856,7 @@ FAQ
   .fourth {
   animation: fadeSlide 1s forwards .8s;
   -moz-animation: fadeSlide 1s forwards .8s;
+  -webkit-animation: fadeSlide 1s forwards .8s;
   opacity: 0;
   }
 
@@ -1828,6 +1870,7 @@ FAQ
   .fifth {
   animation: fadeSlide 1s forwards 1s;
   -moz-animation: fadeSlide 1s forwards 1s;
+  -webkit-animation: fadeSlide 1s forwards 1s;
   opacity: 0;
   }
 
@@ -1841,6 +1884,7 @@ FAQ
   .sixth {
   animation: fadeSlide 1s forwards 1.2s;
   -moz-animation: fadeSlide 1s forwards 1.2s;
+  -webkit-animation: fadeSlide 1s forwards 1.2s;
   opacity: 0;
   }
 
@@ -1854,6 +1898,7 @@ FAQ
   .seventh {
   animation: fadeSlide 1s forwards 1.4s;
   -moz-animation: fadeSlide 1s forwards 1.4s;
+  -webkit-animation: fadeSlide 1s forwards 1.4s;
   opacity: 0;
   }
 
@@ -1903,6 +1948,7 @@ FAQ
   list-style: none;
   animation: fadeUp 1s forwards;
   -moz-animation: fadeUp 1s forwards;
+  -webkit-animation: fadeUp 1s forwards;
   }
   
   #shirtPic {
@@ -1996,6 +2042,7 @@ FAQ
     line-height: 1.5em;
     animation: slide 1s forwards .2s;
     -moz-animation: slide 1s forwards .2s;
+    -webkit-animation: slide 1s forwards .2s;
   }
 
   .description ul {
@@ -2015,6 +2062,7 @@ FAQ
     text-align: center;
     animation: down 1s forwards .2s;
     -moz-animation: down 1s forwards .2s;
+    -webkit-animation: down 1s forwards .2s;
     opacity: 0%;
   }
 
@@ -2032,6 +2080,7 @@ FAQ
     text-align: center;
     animation: down 1s forwards .4s;
     -moz-animation: down 1s forwards .4s;
+    -webkit-animation: down 1s forwards .4s;
     opacity: 0%;
   }
 
@@ -2049,6 +2098,7 @@ FAQ
     text-align: center;
     animation: down 1s forwards .6s;
     -moz-animation: down 1s forwards .6s;
+    -webkit-animation: down 1s forwards .6s;
     opacity: 0%;
   }
 
@@ -2136,6 +2186,7 @@ FAQ
   font-family: avenir, sans-serif;
   animation: fadeIn 1s forwards;
   -moz-animation: fadeIn 1s forwards;
+  -webkit-animation: fadeIn 1s forwards;
 }
 
 .cart {
@@ -2185,7 +2236,7 @@ grid-column: 1;
 }
 
 .editremove {
-  bottom: max(12vh, 18vh);
+  bottom: 15vh;
   position: absolute;
   font-family: avenir, sans-serif;
   font-size: .75em;
@@ -2202,15 +2253,25 @@ grid-column: 1;
 
 
 .bottom-container {
-  grid-column: 1 / 10;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
   display: grid;
-  position: relative;
-  margin-top: clamp(10vh, 45vh, 50vh);
-  bottom: 0px;
+  margin: 0 3vw;
+  position: absolute;
+  justify-content: center;
+  padding-right: 1.45vw;
+  bottom: 3vh;
+  width: 100%;
   opacity: 1;
 }      
 
+.total {
+  grid-column: 1 / 6;
+  margin: 0;
+}
+
 .checkout {
+  grid-column: 1 / 6;
   padding: 10px 15px;
   background-color: black;
   color: white;
@@ -2223,8 +2284,11 @@ grid-column: 1;
 
 .bottom-container::before {
   content: '';
+  grid-column: 1 / 6;
+  display: grid;
+  width: 100%;
   border-top: 1px solid black;
-  margin-bottom: 1vw;
+  margin-bottom: 0;
 }
 
 /* DONT FUCKING TOUCH THIS SHIT OR I WILL KILL YOU */
