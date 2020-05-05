@@ -1659,7 +1659,6 @@ ABOUT
   margin-bottom: 5vh;
   z-index: 997;
   position: relative;
-  letter-spacing: 2px;
   line-height: 1.5em;
   }
 
@@ -1704,7 +1703,6 @@ ABOUT
   margin-bottom: 5vh;
   z-index: 997;
   position: absolute;
-  letter-spacing: 2px;
   line-height: 1.5em;
   }
   
@@ -1769,7 +1767,7 @@ FAQ
 */
 
   #faq {
-  padding-top: 125px;
+  padding-top: 150px;
   }
 
   .fAQ {
@@ -1978,7 +1976,7 @@ FAQ
 
   .priceShirt {
   font-weight: 400;
-  font-size: 3em;
+  font-size: 1em;
   grid-column: 4 / 5;
   position: relative;
   margin: 0;
